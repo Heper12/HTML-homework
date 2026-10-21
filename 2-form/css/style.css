@@ -1,0 +1,48 @@
+*{
+    font-family: "Open-sans", sans-serif;
+}
+h1{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+}
+.have-account{
+font-weight: 400;
+font-size: 18px;
+line-height: 100%;
+}
+.register-form{
+ background-color: #FFFEFE;
+}
+input{
+    background-color: #fff;
+    color: #333333;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+}
+input::placeholder{
+color:#999999;
+font-weight: 400;
+background-color: #F5F5F5;
+}
+button{
+    background-color: #089FE0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #fff;
+    text-align: center;
+}
+.agreement{
+    color: #666666;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 100%;
+}
+.agreement input{
+    background-color: #F5F5F5;
+}
+.agreement a{
+    color: #089FE0;
+}

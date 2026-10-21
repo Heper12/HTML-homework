@@ -1,0 +1,73 @@
+*{
+    font-family: 'Roboto', monospace;
+    color: #ffffff;
+}
+body{
+    background:linear-gradient(#374151,#111827);
+}
+p{
+    font-size: 16px;
+    line-height: 30px;
+}
+.logo{
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: 400;
+}
+nav a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+form[role="search"]{
+    box-sizing: border-box;
+    background-color: rgba(31, 41, 55, 0.6);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    width: 224px;
+    height: 40px;
+    padding: 8px 128px 12px 17px;
+    border-radius: 100px;
+}
+form[role="search"] input{
+    background-color: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 1);
+}
+.breadcrumbs{
+    font-size: 14px;
+    line-height: 100%;
+    margin: 80px auto 14px;
+}
+h1{
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.author-name{
+    font-size: 16px;
+    line-height: 28px;
+
+}
+.author{
+    margin:0 auto 28px;
+}
+.author-position{
+    font-size: 14px;
+    line-height: 28px;
+}
+figure{
+    margin: 0 auto 69px;
+}
+figure + p{
+    font-size: 20px;
+    line-height: 32px;
+}
+footer{
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    margin: 103px auto 77px;
+}
