@@ -4,20 +4,60 @@
 }
 body{
     background:linear-gradient(#374151,#111827);
+    margin: 0;
 }
 p{
     font-size: 16px;
     line-height: 30px;
 }
+header{
+    display: flex;
+    margin: 72px 180px 73px;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+header nav ul li:first-child{
+    margin-right: 52px;
+}
+header nav ul li:nth-child(2){
+    margin-right: 39px;
+}
 .logo{
     font-size: 18px;
     line-height: 100%;
     font-weight: 400;
+    display: flex;
+    gap: 11px;
+    align-items: center;
+    margin-right: 77px;
+}
+.logo a{
+    text-decoration: none;
+}
+.logo-block{
+    background-color: #4B5563;
+    box-shadow: 0 15px 30px rgba(0, 0, 0,0.15);
+    border-radius: 3px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 nav a{
     text-decoration: none;
     font-size: 16px;
     font-weight: 400;
+}
+article{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
 }
 form[role="search"]{
     box-sizing: border-box;
@@ -27,8 +67,12 @@ form[role="search"]{
     font-weight: 400;
     width: 224px;
     height: 40px;
+    gap: 17px;
     padding: 8px 128px 12px 17px;
     border-radius: 100px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
 }
 form[role="search"] input{
     background-color: transparent;
@@ -39,11 +83,28 @@ form[role="search"] input{
     font-size: 14px;
     line-height: 100%;
     margin: 80px auto 14px;
+    color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.breadcrumbs >*{
+    font-size: 14px;
+    line-height: 100%;
+    color: rgba(255, 255, 255, 0.6);
+}
+.breadcrumbs .rect{
+    display: block;
+width: 4px;
+background-color:rgba(255, 255, 255, 0.6) ;
+height: 4px;
+border-radius: 100%;
 }
 h1{
     font-size: 24px;
     line-height: 38px;
     text-align: center;
+    margin: 0;
     margin-bottom: 30px;
 }
 .author-name{
@@ -53,10 +114,24 @@ h1{
 }
 .author{
     margin:0 auto 28px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.author p{
+    margin: 0;
+}
+.author p:last-child{
+    color: rgba(255, 255, 255, 0.6);
 }
 .author-position{
     font-size: 14px;
     line-height: 28px;
+}
+.author img{
+    object-fit: contain;
+    width: 50px;
+    height: 50px;
 }
 figure{
     margin: 0 auto 69px;
@@ -70,4 +145,7 @@ footer{
     line-height: 28px;
     text-align: center;
     margin: 103px auto 77px;
+}
+article>p{
+    max-width: 708px;
 }
