@@ -1,48 +1,138 @@
+
 *{
-    font-family: "Open-sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #F39494;
+    background: linear-gradient(225deg, #FDC5C5 25%, rgba(242,152,222,0)), linear-gradient(225deg,rgba(255, 165, 165, 1) 33%, rgba(255, 255, 255, 0) 82%), #F39494 ;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 h1{
     font-weight: 700;
     font-size: 36px;
     line-height: 100%;
+    height: 54px;
+    margin: 0;
 }
 .have-account{
 font-weight: 400;
+height: 26px;
 font-size: 18px;
 line-height: 100%;
 }
+.have-account a{
+    color: #089FE0;
+}
+main{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
 .register-form{
  background-color: #FFFEFE;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ border-radius: 10px;
+ padding: 72px 95px 91px 93px;
+ max-width: 582px;
+ box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.have-account span{
+color: #666666;
 }
 input{
-    background-color: #fff;
+    background-color: #F5F5F5;
     color: #333333;
     font-weight: 600;
     font-size: 16px;
     line-height: 100%;
+    border:1px solid #F5F5F5;
+    border-radius: 5px;
+    width: 100%;
+    padding:9px 11px ;
+}
+input:curs
+input:focus{
+    background-color: #FFFFFF;
+    outline: none;
+    border:1px solid #F5F5F5;
 }
 input::placeholder{
 color:#999999;
 font-weight: 400;
-background-color: #F5F5F5;
+font-style: italic;
 }
 button{
     background-color: #089FE0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-size: 18px;
     font-weight: 400;
     line-height: 100%;
+    padding: 9px 24px;
     color: #fff;
     text-align: center;
+    border: none;
+    border-radius: 5px;
 }
+button::before{
+    content: '';
+    width: 24px;
+}
+
+
 .agreement{
     color: #666666;
     font-size: 14px;
+    display: flex;
     font-weight: 400;
     line-height: 100%;
+    align-items: flex-end;
+    gap: 2px;
 }
 .agreement input{
     background-color: #F5F5F5;
 }
 .agreement a{
     color: #089FE0;
+    text-decoration: none;
+}
+label:not(.agreement){
+    display: none;
+}
+input[type="checkbox"]{
+    margin: 0;
+    width: 15px;
+    height: 16px;
+    border-radius: 5px;
+    background-color:#F5F5F5 ;
+    border: 1px solid #EEEEEE;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 47px;
+    width: 100%;
+}
+.form-names{
+display: flex;
+}
+#firstname{
+    border-right: 1px solid #fff;
+    border-radius: 5px 0 0 5px;
+}
+#lastname{
+    border-radius: 0 5px 5px 0;
+}
+.agreement a{
+    margin-left: 7px;
 }
