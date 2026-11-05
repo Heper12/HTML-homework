@@ -1,0 +1,147 @@
+.section-light{
+    background-color: var(--color-bg-light);
+}
+
+.button{
+    color: var(--color-text);
+    padding: 16px 32px;
+    border-radius:var(--border-10);
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+.button-ghost{
+    border: 1px solid var(--color-stroke);
+    background: transparent;
+}
+.button-primary{
+    border: none;
+    background-color:var(--color-primary);
+}
+.button-primary:hover{
+    background-color:var(--color-primary-hover);
+}
+.button-ghost:hover{
+background: var(--color-bg-medium);
+}
+
+@media(max-width:480px){
+    .button{
+        padding: 12px 24px;
+    }
+}
+
+
+
+/* Social */
+.social-icons{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.social-icons__icon{
+    padding: 11px;
+    border: 1px solid var(--color-stroke);
+    border-radius: var(--border-8);
+    text-decoration: none;
+    width: 48px;
+    height: 48px;
+}
+.social-icons__icon:hover{
+    background-color: var(--color-bg-light);
+}
+
+
+
+
+/* Other */
+
+.subtitile{
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--color-secondary);
+    margin-bottom: 8px;
+}
+
+.title{
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 120%;
+    color: var(--color-text);
+    margin-bottom: 32px;
+}
+@media(max-width:860px){
+    .title{
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 120%;
+    }
+}
+
+
+
+.article{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 32px;
+    align-items: flex-start;
+    margin-bottom: 32px;
+}
+.article:last-child{
+    margin-bottom: 48px;
+}
+
+.statistic{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.statistic-item{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-link-hover);
+    font-size: 16px;
+    line-height: 120%;
+    font-weight: 400;
+}
+
+.section__wrapper{
+    max-width: var(--layout-width);
+    margin:0 auto;
+    padding: 40px 24px;
+    padding-bottom: 100px;
+}
+.paragraph{
+    font-size: 18px;
+    color: var(--color-text);
+    line-height: 150%;
+    font-weight: 400;
+    max-width: 787px;
+}
+.button-more{
+    text-align: center;
+}
+
+.card{
+    background-color: var(--color-bg-light);
+    border-radius: var(--broder-16);    
+}
+
+@media(max-width:860px){
+    .article{
+        flex-direction: column;
+    }
+    .article__cta{
+        width: 100%;
+    }
+    .article__cta .button{
+        width: 100%;
+    }
+    .article__title{
+        font-size: 21px;
+    }
+}
