@@ -45,7 +45,7 @@ p{
 }
 .tariffs{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 24px;
     justify-content: center;
 
@@ -54,7 +54,6 @@ p{
     justify-items: start;
     align-content: end;
     display: grid;
-    flex-direction: column;
     border-radius:var(--border-8);
     box-shadow: 0 0 32px rgba(78,93,124,0.16);
     padding: 48px 40px;
@@ -166,6 +165,7 @@ font-weight: 700;
     .headling__h2{
         font-size: 36px;
     }
+    .section { padding: 40px 16px; }
 }
 @media(max-width:375px){
     .card__main{
