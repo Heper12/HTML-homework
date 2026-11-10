@@ -112,7 +112,7 @@ background: var(--color-bg-medium);
 .section__wrapper{
     max-width: var(--layout-width);
     margin:0 auto;
-    padding: 40px 24px;
+    padding: 100px 24px;
     padding-bottom: 100px;
 }
 .paragraph{
@@ -130,6 +130,15 @@ background: var(--color-bg-medium);
     background-color: var(--color-bg-light);
     border-radius: var(--broder-16);    
 }
+.card_light{
+    background: var(--color-bg-medium);
+}
+.card_48x24{
+    padding:48px 24px;
+}
+.card_24x32{
+    padding:24px 32px;
+}
 
 @media(max-width:860px){
     .article{
@@ -145,3 +154,95 @@ background: var(--color-bg-medium);
         font-size: 21px;
     }
 }
+
+.chip{
+font-size: 18px;
+color: var(--color-text);
+line-height: 120%;
+font-weight: 400;
+background: none;
+cursor: pointer;
+padding: 8px 16px;
+border-radius:var(--border-10);
+border: 1px solid var(--color-stroke);
+white-space: nowrap;
+}
+
+.chip:hover{
+    background:var(--color-bg-light);
+}
+.chip_active{
+    background-color: var(--color-primary);
+    border: none;
+}
+.chip_active:hover{
+    background-color: var(--color-primary-hover);
+}
+
+/* Courses */
+
+.course-card{
+    background: var(--color-bg-light);
+    border-radius: var(--border-10);
+    color: var(--color-text);
+}
+
+
+
+
+
+/*  Tag */
+
+.tag{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--color-text);
+    border: 1px solid var(--color-stroke);
+    border-radius: var(--border-17);
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.course-card__tags{
+    display: flex;
+    gap: 12px;
+}
+.course-card__body{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.course-card__cover img{
+    border: var(--border-10) var(--border-10) 0 0;
+    width: 100%;
+}
+
+.course-card__footer{
+    background: var(--color-bg-medium);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    font-size: 22px;
+    padding: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    border-radius: 0 0 var(--border-10) var(--border-10);
+}
+
+.course-card__title{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.course-card__author{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--color-link-hover);
+}
+

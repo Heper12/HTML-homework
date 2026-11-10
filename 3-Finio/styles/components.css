@@ -1,0 +1,207 @@
+.logo{
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 140%;
+    font-weight: 900;
+    color: var(--color-text-light);
+}
+
+.h1{
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 120%;
+    margin-bottom: 40px;
+}
+
+.h2__title{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 120%;
+    margin: 0 0 24px;
+}
+.paragraph{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140%;
+    text-align: left;
+    color: var(--color-text);
+}
+
+.advantages{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+.advatages__card{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.advantages__card_text{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.card__paragraph{
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 140%;
+    color: var(--color-text);
+    text-align: left;
+}
+
+.image__block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.tariffs{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    justify-content: center;
+
+}
+.tarrifs__card{
+    justify-items: start;
+    align-content: end;
+    display: grid;
+    border-radius:var(--border-8);
+    box-shadow: 0 0 32px rgba(78,93,124,0.16);
+    padding: 48px 40px;
+    max-width: 369px;
+}
+.card-light{
+    background-color: #fff;
+}
+.card-dark{
+    background-color: #357EFE;
+}
+.card-title{
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 120%;
+    margin-bottom: 16px;
+    color: var(--color-text-dark);
+}
+.card-dark .card-title{
+    color:var(--color-text-light);
+}
+.card-description{
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.card-dark .card-description{
+    margin-bottom: 32px;
+    color:var(--color-paragraph-light);
+}
+
+.button{
+    padding:12px 32px;
+    justify-self: stretch;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 800;
+    border-radius: 47px;
+    text-decoration: none;
+}
+.button-dark{
+    color:var(--color-text-light);
+    border: none;
+    background-color:var(--bg-color-button);
+}
+.button-light{
+    color:var(--bg-color-button);
+    border: none;
+    background-color:var(--bg-color-button-alt);
+}
+.button:hover{
+    background-color: var(--bg-color-button-hover);
+}
+
+.card__main{
+    margin-bottom: 40px;
+    justify-self: stretch;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    color: var(--color-text-alt);
+}
+.card-dark .card__main{
+    margin-bottom: 34px;   
+}
+.card__main_item{
+padding: 16px 0;
+}
+.card-light .card__main_item{
+    border-bottom: 1px solid#4E5D7C14;
+}
+.card-light .card__main_item:nth-child(5), .card-light .card__main_item:nth-child(6){
+    border-bottom: none;
+}
+.card-dark .card__main_item{
+    border-bottom: 1px solid#FFFFFF29;
+    color: var(--color-text-light);
+}
+.card-dark .card__main_item:nth-child(5), .card-dark .card__main_item:nth-child(6){
+    border-bottom: none;
+}
+.card-benefit{
+    display: inline;
+    background-color: var(--bg-benefit);
+    border-radius: var(--border-8);
+    color: var(--color-text-light);
+    padding: 4px 16px;
+    line-height: 140%;
+    margin-bottom: 16px;
+}
+.text-bold{
+    font-weight: 800;
+}
+.benefit{
+padding: 8px 16px;
+border-radius: var(--border-8);
+background-color:var(--bg-primary-price) ;
+display: inline-block;
+color: var(--color-text-light);
+font-weight: 700;
+}
+
+.title-light{
+    color: var(--color-text-light);
+}
+.text-light{
+    color: var(--color-text-semilight);
+}
+@media(max-width:480px){
+    .tarrifs__card{
+        padding:48px 24px;
+    }
+    .card__main{
+        margin-bottom: 32px;
+    }
+    .card-description{
+        margin-bottom: 32px;
+    }
+    .headling__h2{
+        font-size: 36px;
+    }
+    .section { padding: 40px 16px; }
+}
+@media(max-width:375px){
+    .card__main{
+        grid-template-columns:1fr;
+    }
+    .card-light .card__main_item:nth-child(5){
+    border-bottom: 1px solid #4E5D7C14;
+    }
+    .card-dark .card__main_item:nth-child(5){
+    border-bottom: 1px solid#FFFFFF29;
+}
+}

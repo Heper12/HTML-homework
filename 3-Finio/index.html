@@ -7,59 +7,295 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/components.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="logo">finio</div>
+            <nav>
+                <ul class="header__nav">
+                    <li class="header__nav_item"><a class="header__nav_link" href="#">Возможности</a></li>
+                    <li class="header__nav_item"><a class="header__nav_link" href="#">Тарифы</a></li>
+                    <li class="header__nav_item"><a class="header__nav_link" href="#">Отзывы</a></li>
+                    <li class="header__nav_item"><a class="header__nav_link" href="#">Поддержка клиентов</a></li>
+                </ul>
+            </nav>
+            <a href="" class="button button-light header-btn">Личный кабинет</a>
+        </div>
+    </header>
     <main>
         <section class="section">
-            <div class="headling">
-                <h2 class="headling__h2">Тарифы</h2>
-                <p class="headling__paragraph">Все тарифы имеют полный функционал и отличаются только количеством месяцев и выгодой</p>
+            <div class="hero">
+                    <div class="hero__wrapper">
+                        <div class="hero__main">
+                            <h1 class="h1 title-light">Простой финансовый учёт для продавцов на маркетплейсах</h1>
+                            <button class="button button-light">Попробовать 14 дней бесплатно</button>
+                            <img class="hero__companies" src="images/companies.svg" alt="Компании партнёры">
+                        </div>
+                        <div class="hero__right">
+                            <img src="images/notebook.png" alt="Ноутбук изображение">
+                        </div>
+                    </div>
             </div>
-            <div class="tariffs">
-                <div class="tarrifs__card card-light">
-                    <div class="card-title">1 месяц</div>
-                    <p class="card-description">Тариф подойдёт тем, кто ведёт краткосрочные проекты</p>
-                    <div class="card__main">
-                        <div class="card__main_item">Общая стоимость</div>
-                        <div class="card__main_item">1 990 ₽</div>
-                        <div class="card__main_item">Ваша выгода</div>
-                        <div class="card__main_item">0 ₽</div>
-                        <div class="card__main_item">Стоимость месяца</div>
-                        <div class="card__main_item">1 990 ₽/мес</div>
+        </section>
+        <section class="section">
+            <div class="section__wrapper border-bottom">
+                <div class="advantages">
+                    <div class="advatages__card">
+                        <div class="advantages__card_image"><img src="images/icons/analytics.svg" alt="Анализ прибыли иконка"></div>
+                        <div class="advantages__card_text">Анализ прибыли по</br> товарам и брендам</div>
                     </div>
-                    <button class="button button-dark">Бесплатно 14 дней</button>
+                    <div class="advatages__card">
+                        <div class="advantages__card_image"><img src="images/icons/calculate.svg" alt="Учёт доходов Wildberries иконка"></div>
+                        <div class="advantages__card_text">Автоматический учёт</br> доходов Wildberries</div>
+                    </div>
+                    <div class="advatages__card">
+                        <div class="advantages__card_image"><img src="images/icons/price.svg" alt="Цена подписки иконка"></div>
+                        <div class="advantages__card_text">От 990 рублей в месяц</br> с полным функционалом</div>
+                    </div>
                 </div>
-                <div class="tarrifs__card card-light">
-                    <div class="card-benefit">Выгода <span class="text-bold">25%</span></div>
-                    <div class="card-title">6 месяцев</div>
-                    <p class="card-description">Тариф подойдёт для тех, кто уверенно ведёт финансовый учёт </p>
-                    <div class="card__main">
-                        <div class="card__main_item">Общая стоимость</div>
-                        <div class="card__main_item">8 940 ₽</div>
-                        <div class="card__main_item">Ваша выгода</div>
-                        <div class="card__main_item"><span class="benefit">3 000 ₽</span></div>
-                        <div class="card__main_item">Стоимость месяца</div>
-                        <div class="card__main_item">1 490 ₽/мес</div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section__wrapper border-bottom">
+                <div class="image__block">
+                    <div class="image__block_text">
+                        <h2 class="h2__title">Предотвращайте кассовые разрывы</h2>
+                        <p class="paragraph">Заранее планируйте предстоящие платежи и поступления средств. Тем самым, вы избежите неприятной ситуации с нехваткой средств на счетах</p>
                     </div>
-                    <button class="button button-dark">Бесплатно 14 дней</button>
+                    <div class="image__block_image"><img src="images/balance.png" alt="Сокращение кассовых разрывов график изображение"></div>
                 </div>
-                <div class="tarrifs__card card-dark">
-                    <div class="card-benefit">Выгода <span class="text-bold">50%</span></div>
-                    <div class="card-title">12 месяцев</div>
-                    <p class="card-description">Тариф подойдёт для тех, кто уверенно ведёт финансовый учёт и хочет сэкономить</p>
-                    <div class="card__main">
-                        <div class="card__main_item">Общая стоимость</div>
-                        <div class="card__main_item">11 880 ₽</div>
-                        <div class="card__main_item">Ваша выгода</div>
-                        <div class="card__main_item"><span class="benefit">12 000 ₽</span></div>
-                        <div class="card__main_item">Стоимость месяца</div>
-                        <div class="card__main_item">990 ₽/мес</div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section__wrapper border-bottom">
+                <div class="image__block">
+                    <div class="image__block_image"><img src="images/reports.png" alt="Отчёты изображение"></div>
+                    <div class="image__block_text">
+                        <h2 class="h2__title">Отчёты о прибыли и убытках всегда под рукой</h2>
+                        <p class="paragraph">Получите полную информацию о состоянии вашего бизнеса, включающую все необходимые показатели для принятия правильных решений</p>
                     </div>
-                    <button class="button button-light">Бесплатно 14 дней</button>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section__wrapper border-bottom">
+                <div class="image__block">
+                    <div class="image__block_text">
+                        <h2 class="h2__title">Какие товары приносят прибыль</h2>
+                        <p class="paragraph">Находите точки роста, делайте упор на рентабельные товары и увеличивайте свой доход</p>
+                    </div>
+                    <div class="image__block_image"><img src="images/pribyl.png" alt="Аналитика изображение"></div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section__wrapper">
+                <div class="image__block">
+                    <div class="image__block_image"><img src="images/expenses.png" alt=""></div>
+                    <div class="image__block_text">
+                        <h2 class="h2__title">Сокращайте лишние расходы</h2>
+                        <p class="paragraph">Анализируйте расходы, убирать ненужные издержки и находите возможности повышать прибыльность бизнеса</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section dark-section">
+            <div class="section__wrapper">
+                <div class="economy">
+                    <h2 class="h2__title title-light">Экономьте время и нервы на учете</h2>
+                    <p class="paragraph text-light">Автоматическая синхронизация данных с маркетплейсов позволит вам мгновенно получать все важный показатели бизнеса на одном экране. А с помощью мобильной версии вы сможете вносить расходы всего пару кликов</p>
+                    <button class="button button-light">Попробовать 14 дней бесплатно</button>
+                    <img class="economy__image" src="images/report-preview.png" alt="Отчёты предпоказ изображение">
+                    <div class="economy__advatnages">
+                        <div class="advantages__col">
+                            <div class="advantages__col_title">Excel</div>
+                            <ul class="advatages__list">
+                                <li class="advatages__list_item">Долгое внесение данных</li>
+                                <li class="advatages__list_item">Ручной ввод данных с маркетплейсов</li>
+                                <li class="advatages__list_item">Не удобная работа с телефона</li>
+                                <li class="advatages__list_item">Сложность восприятия итоговых данных</li>
+                            </ul>
+                        </div>
+                        <div class="advantages__col">
+                            <div class="advantages__col_title">FINIO</div>
+                            <ul class="advatages__list">
+                                <li class="advatages__list_item">Внесение данных за пару кликов</li>
+                                <li class="advatages__list_item">Автоматическое получение данных по API</li>
+                                <li class="advatages__list_item">Удобная мобильная версия</li>
+                                <li class="advatages__list_item">Наглядные отчеты, графики и таблицы</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section__wrapper border-bottom">
+                <div class="wehave">
+                    <div class="wehave__card">
+                        <img src="images/servers.svg" alt="Сервера иконка">
+                        <div class="card-title">Надёжные сервера на территории России</div>
+                        <p class="card__paragraph">Никакие события не скажутся на бесперебойной работе сервиса. </p>
+                    </div>
+                    <div class="wehave__card">
+                        <img src="images/ssl.svg" alt="SSL Сертификат иконка">
+                        <div class="card-title">Используем 256-битное SSL-шифрование</div>
+                        <p class="card__paragraph">Ваши данные не могут быть перехвачены, даже при использовании открытых Wi-Fi сетей</p>
+                    </div>
+                    <div class="wehave__card">
+                        <img src="images/security.svg" alt="Безопасность иконка">
+                        <div class="card-title">Не передаём ваши данные 3-им лицам</div>
+                        <p class="card__paragraph">Все данные о доходах и расходах компании видны только вам и тем, кому вы открыли доступ</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section__wrapper">
+                <div class="mobile">
+                    <h2 class="h2__title">Мобильная версия</h2>
+                    <p class="paragraph">Пользоваться всем функционалом сервиса удобно в любом месте и с любых устройств</p>
+                    <img src="images/mobile.png" alt="Мобильная версия изображение">
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section__wrapper">
+                <div class="support">
+                    <div class="support__image"><img src="images/girl.png" alt=""></div>
+                    <div class="support__body">
+                        <h2 class="h2__title title-light">Поддержка клиентов</h2>
+                        <p class="paragraph text-light">Мы всегда готовы ответить на любые вопросы в онлайн чате или по телефону.</p>
+                        <div class="socials">
+                            <div class="social__item"><a class="social__item_link" href=""><img src="images/icons/telegram.svg" alt=""> <span>Telegram Finio</span></a></div>
+                            <div class="social__item"><a class="social__item_link" href=""><img src="images/icons/whatsapp.svg" alt=""> <span>WhatsApp Finio</span></a></div>
+                            <div class="social__item"><a class="social__item_link" href="mailto:hello@finio.ru"><img src="images/icons/mail.svg" alt=""> <span>hello@finio.ru</span></a></div>
+                        </div>
+                        <p class="paragraph text-light">Кроме того, мы готовы помочь вам с переносом данных из других сервисов или Excel.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section__wrapper">
+                <div class="headling">
+                    <h2 class="headling__h2">Тарифы</h2>
+                    <p class="headling__paragraph">Все тарифы имеют полный функционал и отличаются только количеством месяцев и выгодой</p>
+                </div>
+                <div class="tariffs">
+                    <div class="tarrifs__card card-light">
+                        <div class="card-title">1 месяц</div>
+                        <p class="card-description">Тариф подойдёт тем, кто ведёт краткосрочные проекты</p>
+                        <div class="card__main">
+                            <div class="card__main_item">Общая стоимость</div>
+                            <div class="card__main_item">1 990 ₽</div>
+                            <div class="card__main_item">Ваша выгода</div>
+                            <div class="card__main_item">0 ₽</div>
+                            <div class="card__main_item">Стоимость месяца</div>
+                            <div class="card__main_item">1 990 ₽/мес</div>
+                        </div>
+                        <button class="button button-dark">Бесплатно 14 дней</button>
+                    </div>
+                    <div class="tarrifs__card card-light">
+                        <div class="card-benefit">Выгода <span class="text-bold">25%</span></div>
+                        <div class="card-title">6 месяцев</div>
+                        <p class="card-description">Тариф подойдёт для тех, кто уверенно ведёт финансовый учёт </p>
+                        <div class="card__main">
+                            <div class="card__main_item">Общая стоимость</div>
+                            <div class="card__main_item">8 940 ₽</div>
+                            <div class="card__main_item">Ваша выгода</div>
+                            <div class="card__main_item"><span class="benefit">3 000 ₽</span></div>
+                            <div class="card__main_item">Стоимость месяца</div>
+                            <div class="card__main_item">1 490 ₽/мес</div>
+                        </div>
+                        <button class="button button-dark">Бесплатно 14 дней</button>
+                    </div>
+                    <div class="tarrifs__card card-dark">
+                        <div class="card-benefit">Выгода <span class="text-bold">50%</span></div>
+                        <div class="card-title">12 месяцев</div>
+                        <p class="card-description">Тариф подойдёт для тех, кто уверенно ведёт финансовый учёт и хочет сэкономить</p>
+                        <div class="card__main">
+                            <div class="card__main_item">Общая стоимость</div>
+                            <div class="card__main_item">11 880 ₽</div>
+                            <div class="card__main_item">Ваша выгода</div>
+                            <div class="card__main_item"><span class="benefit">12 000 ₽</span></div>
+                            <div class="card__main_item">Стоимость месяца</div>
+                            <div class="card__main_item">990 ₽/мес</div>
+                        </div>
+                        <button class="button button-light">Бесплатно 14 дней</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section__wrapper">
+                <div class="reviews">
+                    <h2 class="h2__title">Отзывы</h2>
+                    <div class="reviews__list">
+                        <div class="reviews__card">
+                            <div class="reviews__card_body">
+                                <div class="reviews__card-desc">Впервые за долгое время увидела свои расходы и доходы как на ладони.</div>
+                                <div class="reviews__card-author">
+                                    <div class="author-name">Дана Валеева</div>
+                                    <div class="author-position">Продавец Wildberries</div>
+                                </div>
+                            </div>
+                            <div class="reviews__card_image">
+                                <img src="images/girl-slider.png" alt="Отзыв человек изображение">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__nav">
+                        <div class="left_arrow"><img src="images/icons/arrow.svg" alt="Слайд назад"></div>
+                        <div class="right_arrow"><img src="images/icons/arrow.svg" alt="Слайд вперёд"></div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__top">
+                <div class="footer__left">
+                    <div class="logo">finio</div>
+                    <div class="logo__text">finio</div>
+                </div>
+                <div class="footer__middle">
+                    <nav>
+                        <ul class="footer__nav">
+                            <li class="footer__nav_item"><a class="footer__nav_link" href="#">Возможности</a></li>
+                            <li class="footer__nav_item"><a class="footer__nav_link" href="#">Тарифы</a></li>
+                            <li class="footer__nav_item"><a class="footer__nav_link" href="#">Отзывы</a></li>
+                            <li class="footer__nav_item"><a class="footer__nav_link" href="#">Поддержка клиентов</a></li>
+                            <li class="footer__nav_item"><a class="footer__nav_link" href="#">Политика конфиденциальности</a></li>
+                            <li class="footer__nav_item"><a class="footer__nav_link" href="#">Пользовательское соглашение</a></li>
+                            <li class="footer__nav_item"><a class="footer__nav_link" href="#">Оплата и возврат</a></li>
+                            <li class="footer__nav_item"><a class="footer__nav_link" href="#">Договор оферта</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__right">
+                    <div class="rekvesits">
+                        <div class="rekvestits__item">ИП Ларичев Антон Андреевич</div>
+                        <div class="rekvestits__item">ИНН 773373765379</div>
+                        <div class="rekvestits__item">ОГРИП 322774600208776</div>
+                        <div class="rekvestits__item">Эл. почта: <a href="mailto:alarichev@gmail.com">alarichev@gmail.com</a></div>
+                        <div class="rekvestits__item">Тел.: <a href="tel:+7 (910) 435-75-92">+7 (910) 435-75-92</a></div>
+                        <div class="rekvestits__item">Москва, Вилиса Лациса 25</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <small>© 2022 Finio. Все права защищены.</small>
+                <img src="images/payments.png" alt="Платежные системы изображение">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
