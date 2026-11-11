@@ -152,7 +152,7 @@
 padding: 16px 0;
 }
 .card-light .card__main_item{
-    border-bottom: 1px solid#4E5D7C14;
+    border-bottom: 1px solid var(--border-section);
 }
 .card-light .card__main_item:nth-child(5), .card-light .card__main_item:nth-child(6){
     border-bottom: none;
@@ -369,6 +369,11 @@ max-width: 450px;
         justify-items: center;
     }
 }
+@media(max-width:768px){
+    .tariffs{
+        grid-template-columns: 1fr;
+    }
+}
 @media(max-width:680px){
     .reviews__list{
         width: 100%;
@@ -419,9 +424,9 @@ max-width: 450px;
         grid-template-columns:1fr;
     }
     .card-light .card__main_item:nth-child(5){
-    border-bottom: 1px solid #4E5D7C14;
+    border-bottom: 1px solid var(--border-section);
     }
     .card-dark .card__main_item:nth-child(5){
-    border-bottom: 1px solid#FFFFFF29;
+    border-bottom: 1px solid var(--border-color-header);
 }
 }
