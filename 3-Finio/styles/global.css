@@ -13,9 +13,15 @@
     --bg-primary-price:#FFC736;
     --bg-benefit:#1ABC9C;
     --border-8:8px;
+    --border-16:16px;
     --border-section:#4E5D7C14;
     --layout-width:1392px;
     --layout-width-wide:1432px;
+    --bg-more-dark:#1A1D25;
+    --logo-text:#FFFFFFB2;
+    --color-link-footer:#FFFFFF80;
+    --border-color-footer:#FFFFFF14;
+    --border-color-header:#FFFFFF29;
 }
 *{
     box-sizing: border-box;

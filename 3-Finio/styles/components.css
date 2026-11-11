@@ -5,6 +5,13 @@
     font-weight: 900;
     color: var(--color-text-light);
 }
+.logo__text{
+    color: var(--logo-text);
+    font-size: 17px;
+    line-height: 140%;
+    font-weight: 500;
+    margin-top: 16px;
+}
 
 .h1{
     font-size: 40px;
@@ -19,6 +26,9 @@
     line-height: 120%;
     margin: 0 0 24px;
 }
+.economy .h2__title{
+    text-align: center;
+}
 .paragraph{
     font-size: 18px;
     font-weight: 500;
@@ -30,7 +40,9 @@
 .advantages{
     display: flex;
     gap: 10px;
+    row-gap: 32px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .advatages__card{
     display: flex;
@@ -179,7 +191,215 @@ font-weight: 700;
 .text-light{
     color: var(--color-text-semilight);
 }
+
+
+.border-round{
+    border-radius: var(--border-16);
+}
+
+
+.socials{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom:40px;
+}
+.social__item_link{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 17px;
+    color: var(--color-text-light);
+    font-weight: 500;
+    line-height: 140%;
+    text-decoration: none;
+}
+.social__item_link:hover{
+    color: var(--color-text-semilight);
+}
+
+.reviews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reviews__card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 438px;
+    overflow: hidden;
+    border-radius: var(--border-16);
+}
+.bg-dark{
+    background-color: var(--bg-primary);
+}
+.reviews{
+    position: relative;
+}
+.reviews__list{
+    width: 100%;
+}
+.reviews__card_body{
+    padding: 120px 0 113px 104px;
+}
+.reviews__card-desc{
+    margin-bottom: 40px;
+    font-size: 28px;
+    color: var(--color-text-light);
+    font-weight: 700;
+    line-height: 140%;
+}
+.reviews__card-desc{
+max-width: 450px;
+}
+.author-name{
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 140%;
+    color:var(--color-text-light);
+}
+
+.author-position{
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 140%;
+    color: var(--color-text-light);
+}
+.left_arrow{
+    background-color: var(--bg-color-button-alt);
+    opacity: 60%;
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    position: absolute;
+    left:24px;
+    top: 53%;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.right_arrow{
+    background-color: var(--bg-color-button-alt);
+    opacity: 60%;
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    position: absolute;
+    right:24px;
+    top: 53%;
+    transform: rotateZ(180deg);
+    border-radius: 100%;
+    cursor: pointer;
+}
+.right_arrow:hover{
+    opacity: 1;
+}
+.left_arrow:hover{
+    opacity: 1;
+}
+.reviews__pagination{
+    display: none;
+}
+
+@media(max-width:1290px){
+    .image__block{
+        flex-direction: column;
+        row-gap: 32px;
+    }
+    .image__block_image img{
+        width: 100%;
+    }
+    .image__block_text{
+        order: 1;
+    }
+    .image__block_image{
+        order: 0;
+    }
+}
+@media(max-width:1148px){
+    .reviews__pagination{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        margin: 48px 0;
+    }
+    .reviews__pagination .dot{
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        background-color: var(--color-link-footer);
+    }
+    .reviews__pagination .dot.active{
+        background-color: var(--color-text-light);
+    }
+    .reviews__nav{
+        display: none;
+    }
+    .reviews__card{
+        max-height: max-content;
+        flex-direction: column;
+    }
+    .reviews__list{
+        width: auto;
+    }
+    .reviews__card_image{
+        order: 0;
+        object-fit: cover;
+        overflow: hidden;
+        max-height: 250px;
+    }
+    .reviews__card_image img{
+        width: 100%;
+    }
+    .reviews__card_body{
+        padding: 48px 24px 0;
+        order: 1;
+    }
+}
+@media(max-width:991px){
+    .header-btn{
+        display: none;
+    }
+    .tariffs{
+        justify-items: center;
+    }
+}
+@media(max-width:680px){
+    .reviews__list{
+        width: 100%;
+    }
+}
 @media(max-width:480px){
+    .h2__title{
+        font-size: 36px;
+    }
+    .image__block .h2__title{
+        font-size: 32px;
+    }
+    .mobile .h2__title{
+        text-align: left;
+    }
+    .mobile .paragraph{
+        text-align: left;
+    }
+    .economy .h2__title{
+        text-align: left;
+        font-size: 36px;
+        line-height: 120%;
+    }
+    .advantages__card_text{
+        font-size:18px;
+        line-height: 140%;
+    }
+    .button{
+        padding: 12px 23px;
+    }
+
     .tarrifs__card{
         padding:48px 24px;
     }
@@ -192,7 +412,7 @@ font-weight: 700;
     .headling__h2{
         font-size: 36px;
     }
-    .section { padding: 40px 16px; }
+    .section__wrapper { padding: 40px 16px; }
 }
 @media(max-width:375px){
     .card__main{
