@@ -4,21 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Регистрация</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <main>
-        <section>
+        <section class="register-form">
             <h1>Регистрация</h1>
-            <div><span>Уже есть аккаунт?</span> <a href="#">Войти</a></div>
+            <div class="have-account"><span>Уже есть аккаунт?</span> <a href="#">Войти</a></div>
             <form action="#" method="post">
-                <input type="text" placeholder="Название компании">
-                <div>
-                <input type="text" name="firstname" placeholder="Имя">
-                <input type="text" name="lastname" placeholder="Фамилия">
+                <label for="companyname">Название компании</label>
+                <input name="CompanyName" id="companyname" type="text" placeholder="Название компании">
+                <div class="form-names">
+                <label for="firstname">Имя</label>
+                <input id="firstname" type="text" name="firstname" placeholder="Имя">
+                <label for="lastname">Фамилия</label>
+                <input id="lastname" type="text" name="lastname" placeholder="Фамилия">
                 </div>
-                <input type="email" name="mail">
-                <button type="submit">Зарегистрироваться <img src="#" alt="Войти стрелка"></button>
-                <label>
+                <label for="email">Почта</label>
+                <input id="email" type="email" name="mail" placeholder="E-mail">
+                <button type="submit">Зарегистрироваться <img src="img/Arrow 1.svg" alt="Войти стрелка"></button>
+                <label class="agreement">
                 <input type="checkbox" name="agreement" id="agreement">
                     Я прочитал и принимаю <a href="#">Условия пользования</a>
                 </label>
